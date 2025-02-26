@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>style.css</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #bababa;}
+.s4 { color: #bcbec4;}
+.s5 { color: #6aab73;}
+.s6 { color: #d5b778;}
+.s7 { color: #2aacb8;}
+.s8 { color: #56a8f5;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+style.css</font>
+</center></td></tr></table>
+<pre><span class="s0">@font-face </span><span class="s2">{</span>
+    <span class="s3">font-family</span><span class="s4">: </span><span class="s5">&quot;JetBrains Sans&quot;</span><span class="s2">;</span>
+    <span class="s3">src</span><span class="s4">: </span><span class="s6">url</span><span class="s2">(</span><span class="s5">&quot;fonts/JetBrainsSans-Regular.woff2&quot;</span><span class="s2">);</span>
+<span class="s2">}</span>
+
+<span class="s0">@font-face </span><span class="s2">{</span>
+    <span class="s3">font-family</span><span class="s4">: </span><span class="s5">&quot;JetBrains Mono&quot;</span><span class="s2">;</span>
+    <span class="s3">src</span><span class="s4">: </span><span class="s6">url</span><span class="s2">(</span><span class="s5">&quot;fonts/JetBrainsMono-Regular.woff2&quot;</span><span class="s2">);</span>
+<span class="s2">}</span>
+
+<span class="s4">:</span><span class="s6">root </span><span class="s2">{</span>
+    <span class="s3">font-family</span><span class="s4">: </span><span class="s5">&quot;JetBrains Sans&quot;</span><span class="s2">, </span><span class="s6">Inter</span><span class="s2">, </span><span class="s6">system-ui</span><span class="s2">, </span><span class="s6">Avenir</span><span class="s2">, </span><span class="s6">Helvetica</span><span class="s2">, </span><span class="s6">Arial</span><span class="s2">, </span><span class="s5">sans-serif</span><span class="s2">;</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s7">300</span><span class="s2">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">0.87</span><span class="s2">);</span>
+    <span class="s3">background-color</span><span class="s4">: </span><span class="s8">#000000</span><span class="s2">;</span>
+    <span class="s3">text-align</span><span class="s4">: </span><span class="s5">center</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s6">body </span><span class="s2">{</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s7">0</span><span class="s2">;</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s5">flex</span><span class="s2">;</span>
+    <span class="s3">flex-direction</span><span class="s4">: </span><span class="s5">column</span><span class="s2">;</span>
+    <span class="s3">justify-content</span><span class="s4">: </span><span class="s5">space-between</span><span class="s2">;</span>
+    <span class="s3">min-width</span><span class="s4">: </span><span class="s7">320</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">min-height</span><span class="s4">: </span><span class="s7">100</span><span class="s5">vh</span><span class="s2">;</span>
+    <span class="s3">align-items</span><span class="s4">: </span><span class="s5">center</span><span class="s2">;</span>
+
+    <span class="s3">background-image</span><span class="s4">: </span><span class="s6">url</span><span class="s2">(</span><span class="s5">&quot;background.svg&quot;</span><span class="s2">);</span>
+    <span class="s3">background-repeat</span><span class="s4">: </span><span class="s5">no-repeat</span><span class="s2">;</span>
+    <span class="s3">background-size</span><span class="s4">: </span><span class="s5">contain</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s6">h1 </span><span class="s2">{</span>
+    <span class="s3">font-size</span><span class="s4">: </span><span class="s7">29</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">line-height</span><span class="s4">: </span><span class="s7">39</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s7">300</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">title </span><span class="s2">{</span>
+    <span class="s3">margin-bottom</span><span class="s4">: </span><span class="s7">40</span><span class="s5">px</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s6">#app </span><span class="s2">{</span>
+    <span class="s3">max-width</span><span class="s4">: </span><span class="s7">1280</span><span class="s5">px</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">logo </span><span class="s2">{</span>
+    <span class="s3">margin-top</span><span class="s4">: </span><span class="s7">45</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">margin-left</span><span class="s4">: </span><span class="s7">20</span><span class="s2">%;</span>
+    <span class="s3">align-self</span><span class="s4">: </span><span class="s5">flex-start</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s6">img </span><span class="s2">{</span>
+    <span class="s3">max-width</span><span class="s4">: </span><span class="s7">100</span><span class="s2">%;</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s5">auto</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">counter </span><span class="s2">{</span>
+    <span class="s3">font-family</span><span class="s4">: </span><span class="s5">&quot;JetBrains Mono&quot;</span><span class="s2">, </span><span class="s6">Inter</span><span class="s2">, </span><span class="s6">system-ui</span><span class="s2">, </span><span class="s5">sans-serif</span><span class="s2">;</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s7">400</span><span class="s2">;</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s5">flex</span><span class="s2">;</span>
+    <span class="s3">flex-direction</span><span class="s4">: </span><span class="s5">row</span><span class="s2">;</span>
+    <span class="s3">justify-content</span><span class="s4">: </span><span class="s5">center</span><span class="s2">;</span>
+    <span class="s3">padding</span><span class="s4">: </span><span class="s7">60</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">1</span><span class="s2">);</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">counter-interaction </span><span class="s2">{</span>
+    <span class="s3">display</span><span class="s4">: </span><span class="s5">flex</span><span class="s2">;</span>
+    <span class="s3">flex-direction</span><span class="s4">: </span><span class="s5">row</span><span class="s2">;</span>
+    <span class="s3">flex-wrap</span><span class="s4">: </span><span class="s5">wrap</span><span class="s2">;</span>
+    <span class="s3">gap</span><span class="s4">: </span><span class="s7">20</span><span class="s5">px </span><span class="s7">0</span><span class="s2">;</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s7">470</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">justify-content</span><span class="s4">: </span><span class="s5">space-between</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">counter-interaction button </span><span class="s2">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s7">48</span><span class="s2">%;</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s7">47</span><span class="s2">%;</span>
+    <span class="s3">align-content</span><span class="s4">: </span><span class="s5">space-between</span><span class="s2">;</span>
+    <span class="s3">border</span><span class="s4">: </span><span class="s7">1</span><span class="s5">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">0.3</span><span class="s2">);</span>
+    <span class="s3">border-radius</span><span class="s4">: </span><span class="s7">120</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">font-size</span><span class="s4">: </span><span class="s7">68</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">text-align</span><span class="s4">: </span><span class="s5">center</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">counter-interaction button</span><span class="s4">:</span><span class="s6">nth-child</span><span class="s2">(</span><span class="s7">2</span><span class="s6">n</span><span class="s2">+</span><span class="s7">1</span><span class="s2">) {</span>
+    <span class="s3">margin-right</span><span class="s4">: </span><span class="s7">14</span><span class="s5">px</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">counter-interaction button</span><span class="s4">:</span><span class="s6">disabled </span><span class="s2">{</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">0.5</span><span class="s2">);</span>
+    <span class="s3">background-image</span><span class="s4">: </span><span class="s5">none</span><span class="s2">;</span>
+    <span class="s3">border-color</span><span class="s4">: </span><span class="s5">inherit</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">counter-info </span><span class="s2">{</span>
+    <span class="s3">width</span><span class="s4">: </span><span class="s7">360</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">height</span><span class="s4">: </span><span class="s7">345</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">margin-right</span><span class="s4">: </span><span class="s7">27</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">border</span><span class="s4">: </span><span class="s7">1</span><span class="s5">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">0.3</span><span class="s2">);</span>
+    <span class="s3">background-color</span><span class="s4">: </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">25</span><span class="s2">, </span><span class="s7">25</span><span class="s2">, </span><span class="s7">28</span><span class="s2">, </span><span class="s7">0.5</span><span class="s2">);</span>
+    <span class="s3">border-radius</span><span class="s4">: </span><span class="s7">29</span><span class="s5">px</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">counter-text </span><span class="s2">{</span>
+    <span class="s3">text-transform</span><span class="s4">: </span><span class="s5">uppercase</span><span class="s2">;</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s7">500</span><span class="s2">;</span>
+    <span class="s3">font-size</span><span class="s4">: </span><span class="s7">24</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">margin-top</span><span class="s4">: </span><span class="s7">60</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">margin-bottom</span><span class="s4">: </span><span class="s7">28</span><span class="s5">px</span><span class="s2">;</span>
+
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">counter-value </span><span class="s2">{</span>
+    <span class="s3">font-weight</span><span class="s4">: </span><span class="s7">200</span><span class="s2">;</span>
+    <span class="s3">font-size</span><span class="s4">: </span><span class="s7">170</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">margin</span><span class="s4">: </span><span class="s7">0</span><span class="s2">;</span>
+    <span class="s3">padding</span><span class="s4">: </span><span class="s7">0</span><span class="s2">;</span>
+    <span class="s3">line-height</span><span class="s4">: </span><span class="s7">1</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s6">button </span><span class="s2">{</span>
+    <span class="s3">font-family</span><span class="s4">: </span><span class="s5">&quot;JetBrains Mono&quot;</span><span class="s2">, </span><span class="s6">Inter</span><span class="s2">, </span><span class="s6">system-ui</span><span class="s2">, </span><span class="s5">sans-serif</span><span class="s2">;</span>
+    <span class="s3">background-color</span><span class="s4">: </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">25</span><span class="s2">, </span><span class="s7">25</span><span class="s2">, </span><span class="s7">28</span><span class="s2">, </span><span class="s7">0.5</span><span class="s2">);</span>
+    <span class="s3">cursor</span><span class="s4">: </span><span class="s5">pointer</span><span class="s2">;</span>
+    <span class="s3">color</span><span class="s4">: </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">1</span><span class="s2">);</span>
+<span class="s2">}</span>
+
+<span class="s6">button</span><span class="s4">:</span><span class="s6">hover </span><span class="s2">{</span>
+    <span class="s3">background-image</span><span class="s4">: </span><span class="s6">radial-gradient</span><span class="s2">(</span>
+            <span class="s5">farthest-corner at </span><span class="s7">77</span><span class="s2">% </span><span class="s7">83</span><span class="s2">%,</span>
+            <span class="s6">rgba</span><span class="s2">(</span><span class="s7">1</span><span class="s2">, </span><span class="s7">197</span><span class="s2">, </span><span class="s7">245</span><span class="s2">, </span><span class="s7">0.5</span><span class="s2">) </span><span class="s7">2</span><span class="s2">%,</span>
+            <span class="s6">rgba</span><span class="s2">(</span><span class="s7">1</span><span class="s2">, </span><span class="s7">126</span><span class="s2">, </span><span class="s7">254</span><span class="s2">, </span><span class="s7">0.5</span><span class="s2">) </span><span class="s7">28</span><span class="s2">%,</span>
+            <span class="s6">rgba</span><span class="s2">(</span><span class="s7">25</span><span class="s2">, </span><span class="s7">25</span><span class="s2">, </span><span class="s7">28</span><span class="s2">, </span><span class="s7">0</span><span class="s2">) </span><span class="s7">70</span><span class="s2">%</span>
+    <span class="s2">);</span>
+    <span class="s3">border</span><span class="s4">: </span><span class="s7">1</span><span class="s5">px solid </span><span class="s6">rgba</span><span class="s2">(</span><span class="s7">76</span><span class="s2">, </span><span class="s7">166</span><span class="s2">, </span><span class="s7">255</span><span class="s2">, </span><span class="s7">0.2</span><span class="s2">);</span>
+    <span class="s3">background-clip</span><span class="s4">: </span><span class="s5">padding-box</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">technologies </span><span class="s2">{</span>
+    <span class="s3">margin-bottom</span><span class="s4">: </span><span class="s7">36</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s3">align-self</span><span class="s4">: </span><span class="s5">center</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+<span class="s2">.</span><span class="s6">technologies img </span><span class="s2">{</span>
+    <span class="s3">max-width</span><span class="s4">: </span><span class="s5">fit-content</span><span class="s2">;</span>
+<span class="s2">}</span>
+
+
+<span class="s0">@media </span><span class="s2">(</span><span class="s3">max-width</span><span class="s4">: </span><span class="s7">875</span><span class="s5">px</span><span class="s2">) {</span>
+
+    <span class="s2">.</span><span class="s6">logo </span><span class="s2">{</span>
+        <span class="s3">margin-top</span><span class="s4">: </span><span class="s7">10</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s2">.</span><span class="s6">title </span><span class="s2">{</span>
+        <span class="s3">margin-bottom</span><span class="s4">: </span><span class="s7">30</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s2">.</span><span class="s6">counter </span><span class="s2">{</span>
+        <span class="s3">flex-direction</span><span class="s4">: </span><span class="s5">column</span><span class="s2">;</span>
+        <span class="s3">padding</span><span class="s4">: </span><span class="s7">0</span><span class="s2">;</span>
+        <span class="s3">margin-bottom</span><span class="s4">: </span><span class="s7">0</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s2">.</span><span class="s6">counter-info </span><span class="s2">{</span>
+        <span class="s3">width</span><span class="s4">: </span><span class="s7">100</span><span class="s2">%;</span>
+        <span class="s3">height</span><span class="s4">: </span><span class="s7">300</span><span class="s5">px</span><span class="s2">;</span>
+        <span class="s3">margin-right</span><span class="s4">: </span><span class="s7">0</span><span class="s2">;</span>
+        <span class="s3">margin-bottom</span><span class="s4">: </span><span class="s7">15</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s2">.</span><span class="s6">counter-interaction </span><span class="s2">{</span>
+        <span class="s3">display</span><span class="s4">: </span><span class="s5">flex</span><span class="s2">;</span>
+        <span class="s3">flex-direction</span><span class="s4">: </span><span class="s5">row</span><span class="s2">;</span>
+        <span class="s3">height</span><span class="s4">: </span><span class="s5">auto</span><span class="s2">;</span>
+        <span class="s3">width</span><span class="s4">: </span><span class="s5">auto</span><span class="s2">;</span>
+    <span class="s2">}</span>
+
+    <span class="s2">.</span><span class="s6">counter-interaction button </span><span class="s2">{</span>
+        <span class="s3">width</span><span class="s4">: </span><span class="s7">47</span><span class="s2">%;</span>
+        <span class="s3">height</span><span class="s4">: </span><span class="s7">100</span><span class="s5">px</span><span class="s2">;</span>
+        <span class="s3">margin-right</span><span class="s4">: </span><span class="s7">0</span><span class="s2">;</span>
+        <span class="s3">margin-bottom</span><span class="s4">: </span><span class="s7">15</span><span class="s5">px</span><span class="s2">;</span>
+    <span class="s2">}</span>
+<span class="s2">}</span>
+</pre>
+</body>
+</html>

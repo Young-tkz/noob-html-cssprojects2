@@ -1,0 +1,82 @@
+/* Apply a smooth font */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f9a8d4, #f472b6); /* Light pink gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Center the pricing table */
+.pricing-container {
+    display: flex;
+    gap: 20px;
+}
+
+.plan {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    border-top: 5px solid #f472b6; /* Adds a colored top border */
+}
+
+h1 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f472b6;
+}
+
+.plan p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin: 8px 0;
+    color: #444;
+}
+
+button {
+    background: #f472b6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d94676;
+}
+
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

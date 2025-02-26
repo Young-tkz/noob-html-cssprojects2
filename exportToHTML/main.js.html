@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>main.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #bcbec4;}
+.s4 { color: #2aacb8;}
+.s5 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.js</font>
+</center></td></tr></table>
+<pre><span class="s0">//TIP With Search Everywhere, you can find any action, file, or symbol in your project. Press &lt;shortcut actionId=&quot;Shift&quot;/&gt; &lt;shortcut actionId=&quot;Shift&quot;/&gt;, type in &lt;b&gt;terminal&lt;/b&gt;, and press &lt;shortcut actionId=&quot;EditorEnter&quot;/&gt;. Then run &lt;shortcut raw=&quot;npm run dev&quot;/&gt; in the terminal and click the link in its output to open the app in the browser.</span>
+<span class="s2">export function </span><span class="s1">setupCounter</span><span class="s3">(</span><span class="s1">element</span><span class="s3">) {</span>
+  <span class="s0">//TIP Try &lt;shortcut actionId=&quot;GotoDeclaration&quot;/&gt; on &lt;shortcut raw=&quot;counter&quot;/&gt; to see its usages. You can also use this shortcut to jump to a declaration – try it on &lt;shortcut raw=&quot;counter&quot;/&gt; on line 13.</span>
+  <span class="s2">let </span><span class="s1">counter </span><span class="s3">= </span><span class="s4">0</span><span class="s3">;</span>
+
+  <span class="s2">const </span><span class="s1">adjustCounterValue </span><span class="s3">= </span><span class="s1">value </span><span class="s3">=&gt; {</span>
+    <span class="s2">if </span><span class="s3">(</span><span class="s1">value </span><span class="s3">&gt;= </span><span class="s4">100</span><span class="s3">) </span><span class="s2">return </span><span class="s1">value </span><span class="s3">- </span><span class="s4">100</span><span class="s3">;</span>
+    <span class="s2">if </span><span class="s3">(</span><span class="s1">value </span><span class="s3">&lt;= -</span><span class="s4">100</span><span class="s3">) </span><span class="s2">return </span><span class="s1">value </span><span class="s3">+ </span><span class="s4">100</span><span class="s3">;</span>
+    <span class="s2">return </span><span class="s1">value</span><span class="s3">;</span>
+  <span class="s3">};</span>
+
+  <span class="s2">const </span><span class="s1">setCounter </span><span class="s3">= </span><span class="s1">value </span><span class="s3">=&gt; {</span>
+    <span class="s1">counter </span><span class="s3">= </span><span class="s1">adjustCounterValue</span><span class="s3">(</span><span class="s1">value</span><span class="s3">);</span>
+    <span class="s0">//TIP WebStorm has lots of inspections to help you catch issues in your project. It also has quick fixes to help you resolve them. Press &lt;shortcut actionId=&quot;ShowIntentionActions&quot;/&gt; on &lt;shortcut raw=&quot;text&quot;/&gt; and choose &lt;b&gt;Inline variable&lt;/b&gt; to clean up the redundant code.</span>
+    <span class="s2">const </span><span class="s1">text </span><span class="s3">= </span><span class="s5">`</span><span class="s1">$</span><span class="s3">{</span><span class="s1">counter</span><span class="s3">}</span><span class="s5">`</span><span class="s3">;</span>
+    <span class="s1">element</span><span class="s3">.</span><span class="s1">innerHTML </span><span class="s3">= </span><span class="s1">text</span><span class="s3">;</span>
+  <span class="s3">};</span>
+
+  <span class="s1">document</span><span class="s3">.</span><span class="s1">getElementById</span><span class="s3">(</span><span class="s5">'increaseByOne'</span><span class="s3">).</span><span class="s1">addEventListener</span><span class="s3">(</span><span class="s5">'click'</span><span class="s3">, () =&gt; </span><span class="s1">setCounter</span><span class="s3">(</span><span class="s1">counter </span><span class="s3">+ </span><span class="s4">1</span><span class="s3">));</span>
+  <span class="s1">document</span><span class="s3">.</span><span class="s1">getElementById</span><span class="s3">(</span><span class="s5">'decreaseByOne'</span><span class="s3">).</span><span class="s1">addEventListener</span><span class="s3">(</span><span class="s5">'click'</span><span class="s3">, () =&gt; </span><span class="s1">setCounter</span><span class="s3">(</span><span class="s1">counter </span><span class="s3">- </span><span class="s4">1</span><span class="s3">));</span>
+  <span class="s1">document</span><span class="s3">.</span><span class="s1">getElementById</span><span class="s3">(</span><span class="s5">'increaseByTwo'</span><span class="s3">).</span><span class="s1">addEventListener</span><span class="s3">(</span><span class="s5">'click'</span><span class="s3">, () =&gt; </span><span class="s1">setCounter</span><span class="s3">(</span><span class="s1">counter </span><span class="s3">+ </span><span class="s4">2</span><span class="s3">));</span>
+  <span class="s0">//TIP In the app running in the browser, you’ll find that clicking &lt;b&gt;-2&lt;/b&gt; doesn't work. To fix that, rewrite it using the code from lines 19 - 21 as examples of the logic.</span>
+  <span class="s1">document</span><span class="s3">.</span><span class="s1">getElementById</span><span class="s3">(</span><span class="s5">'decreaseByTwo'</span><span class="s3">)</span>
+
+  <span class="s0">//TIP Let’s see how to review and commit your changes. Press &lt;shortcut actionId=&quot;GotoAction&quot;/&gt; and look for &lt;b&gt;commit&lt;/b&gt;. Try checking the diff for a file – double-click main.js to do that.</span>
+  <span class="s1">setCounter</span><span class="s3">(</span><span class="s4">0</span><span class="s3">);</span>
+<span class="s3">}</span>
+
+<span class="s0">//TIP To find text strings in your project, you can use the &lt;shortcut actionId=&quot;FindInPath&quot;/&gt; shortcut. Press it and type in &lt;b&gt;counter&lt;/b&gt; – you’ll get all matches in one place.</span>
+<span class="s1">setupCounter</span><span class="s3">(</span><span class="s1">document</span><span class="s3">.</span><span class="s1">getElementById</span><span class="s3">(</span><span class="s5">'counter-value'</span><span class="s3">));</span>
+
+<span class="s0">//TIP There's much more in WebStorm to help you be more productive. Press &lt;shortcut actionId=&quot;Shift&quot;/&gt; &lt;shortcut actionId=&quot;Shift&quot;/&gt; and search for &lt;b&gt;Learn WebStorm&lt;/b&gt; to open our learning hub with more things for you to try.</span>
+</pre>
+</body>
+</html>
